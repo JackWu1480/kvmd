@@ -94,4 +94,6 @@ COPY testenv/fakes/msd/* /fake_sysfs/sys/kernel/config/usb_gadget/kvmd/functions
 COPY testenv/fakes/cpu_temp /fake_sysfs/sys/class/thermal/thermal_zone0/temp
 COPY testenv/fakes/dt_model /fake_procfs/proc/device-tree/model
 
+EXPOSE 80
+
 CMD /bin/bash
